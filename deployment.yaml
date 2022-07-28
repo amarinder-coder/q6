@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: q2
+  name: q6
   labels:
-    app: myapp
+    app: myapp6
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: myapp6
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp6
     spec:
       containers:
-        - name: q2demo
+        - name: q6demo
           image: amar1999/myapp:v1
